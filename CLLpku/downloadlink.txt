@@ -1,0 +1,1 @@
+http://ccl.pku.edu.cn:8080/ccl_corpus/search?download_serarch_result=%E4%B8%8B%E8%BD%BD&UserMaxHits=50000&dir=xiandai&q=%E8%82%9D%E8%84%8F&LastQuery=%E8%82%9D%E8%84%8F&num=50&index=FullIndex&outputFormat=TEXT&encoding=UTF-8&orderStyle=score&maxLeftLength=3000&maxRightLength=3000&scopestr=

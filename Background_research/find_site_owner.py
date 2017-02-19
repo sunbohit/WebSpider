@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 #寻找网站所有者
 import whois
-print(whois.whois("bilibili.com"))
+print whois.whois("bilibili.com")
 '''
 {
   "domain_name": "BILIBILI.COM",

@@ -1,3 +1,5 @@
+# 伪装登录
+
 import urllib.request  
 url = "http://www.douban.com/"  
 webPage=urllib.request.urlopen(url)  

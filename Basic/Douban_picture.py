@@ -1,3 +1,4 @@
+#从豆瓣爬取图片
 import urllib.request    
 import socket    
 import re    

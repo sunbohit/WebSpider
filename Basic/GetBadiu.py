@@ -1,9 +1,10 @@
+# 获得百度页面
 import urllib.request
 
 url = "http://www.baidu.com"
-a = urllib.request.urlopen(url)
-data = a.read()
-data = data.decode('UTF-8')
+a = urllib.request.urlopen(url) # 请求
+data = a.read() # 读取
+data = data.decode('UTF-8') # 解码
 #print(data)
 #print(type(a))
 '''

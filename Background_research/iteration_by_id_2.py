@@ -1,24 +1,27 @@
 # -*- coding: utf-8 -*-
 '''
-id遍历爬虫
+具有容错性的id遍历爬虫
 '''
-
 import itertools
 from download_page import download
 
-
 def iteration():
+    max_errors = 5 # 允许的最大错误数量
+    num_errors = 0 # 记录当前错误数
     for page in itertools.count(1):
-    #下载bilibili新番页面
         url = 'http://www.bilibili.com/video/bangumi-two-{}.html'.format(page)
         html = download(url)
         if html is None:
-            # 下载页面时出现了错误
-            # 很可能是到达了最后一个页面
-            break
+            # 遇到下载出错
+            num_errors += 1
+            if num_errors == max_errors:
+                # 错误已达到允许的最大错误数量
+                break
+            # 设置了最大错误数量，遇到id遍历完的情况也可以停止下来
         else:
-            # 下载成功
-            pass
+            # 成功
+            # ...
+            num_errors = 0
 
 if __name__ == '__main__':
     iteration()

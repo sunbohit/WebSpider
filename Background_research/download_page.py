@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+'''
+页面下载
+'''
 import urllib2
 import urlparse
 

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+'''
+通过网站地图爬取页面
+'''
 import re
 from download_page import download
 

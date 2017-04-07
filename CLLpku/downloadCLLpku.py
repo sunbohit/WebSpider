@@ -1,8 +1,4 @@
-#import urllib.request    
-#import socket    
-#import re    
-#import sys    
-#import os
+# 爬取北京大学现代汉语语料库的数据
 import urllib.parse
 
 search = '肾脏'
